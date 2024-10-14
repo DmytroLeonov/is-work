@@ -1,0 +1,6 @@
+.env
+# to enable tailwind lsp
+tailwind.config.ts
+
+er.drawio
+.$er.drawio.bkp
