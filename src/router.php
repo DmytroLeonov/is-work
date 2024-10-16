@@ -2,7 +2,8 @@
     $paht = parse_url($_SERVER["REQUEST_URI"])["path"];
 
     $routes = [
-        "/" => "controllers/index.php",
+        "/" => "controllers/index.controller.php",
+        "/conferences" => "controllers/conferences.controller.php",
     ];
 
     function routeToController($path, $routes) {
