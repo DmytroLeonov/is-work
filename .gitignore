@@ -1,3 +1,4 @@
+data/
 .env
 # to enable tailwind lsp
 tailwind.config.ts
