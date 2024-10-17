@@ -11,6 +11,7 @@
             return abort();
         }
 
+        require("db.php");
         require($routes[$path]);
     }
 
