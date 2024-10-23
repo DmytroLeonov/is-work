@@ -2,8 +2,9 @@
     $paht = parse_url($_SERVER["REQUEST_URI"])["path"];
 
     $routes = [
-        "/" => "controllers/index.controller.php",
-        "/conferences" => "controllers/conferences.controller.php",
+        "/" => "index.controller.php",
+        "/conferences" => "conferences.controller.php",
+        "/conference" => "conference.controller.php",
     ];
 
     function routeToController($path, $routes) {
@@ -12,7 +13,7 @@
         }
 
         require("db.php");
-        require($routes[$path]);
+        require("controllers/$routes[$path]");
     }
 
     function abort($code = 404) {

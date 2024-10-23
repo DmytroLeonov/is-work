@@ -1,19 +1,25 @@
 <table class="w-full">
     <tbody>
         <tr>
-            <th>id</th>
-            <th>name</th>
-            <th>participants</th>
-            <th>date</th>
-            <th>status</th>
+            <th class="text-left">id</th>
+            <th class="text-left">name</th>
+            <th class="text-left">participants</th>
+            <th class="text-left">date</th>
+            <th class="text-left">status</th>
         </tr>
         <?php foreach ($conferences as $conference) : ?>
             <tr>
-                <td class="text-center"><?= $conference["id"] ?></td>
-                <td class="text-center"><?= $conference["name"] ?></td>
-                <td class="text-center"><?= $conference["participants"] ?></td>
-                <td class="text-center"><?= $conference["date"] ?></td>
-                <td class="text-center"><?= $conference["status"] ?></td>
+                <td><?= $conference["id"] ?></td>
+                <td>
+                    <a
+                        class="underline text-blue-500"
+                        href="conference?id=<?= $conference["id"] ?>">
+                        <?= $conference["name"] ?>
+                    </a>
+                </td>
+                <td><?= $conference["participants"] ?></td>
+                <td><?= $conference["date"] ?></td>
+                <td><?= $conference["status"] ?></td>
             </tr>
         <?php endforeach ?>
         </tr>

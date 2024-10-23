@@ -32,4 +32,3 @@ $query = "
 $conferences = $mysqli->execute_query($query)->fetch_all(MYSQLI_ASSOC);
 
 require("views/conferences.view.php");
-
