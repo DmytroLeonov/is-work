@@ -42,6 +42,7 @@ create table article (
     id serial primary key,
     journal_issue_id bigint unsigned not null,
     employee_id bigint unsigned not null,
+    name varchar(100) not null, 
     foreign key (journal_issue_id) references journal_issue (id),
     foreign key (employee_id) references employee (id)
 );

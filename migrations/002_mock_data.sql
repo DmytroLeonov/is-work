@@ -68,22 +68,22 @@ insert into journal_issue (journal_id, year, issue) values
 (4, 2022, 4),
 (5, 2021, 1);
 
-insert into article (journal_issue_id, employee_id) values
-(1, 1),
-(2, 2),
-(3, 3),
-(4, 4),
-(5, 5),
-(6, 6),
-(7, 7),
-(8, 8),
-(9, 9),
-(10, 10),
-(11, 1),
-(12, 2),
-(13, 3),
-(14, 4),
-(15, 5);
+insert into article (journal_issue_id, employee_id, name) values
+(1, 1, 'The Future of AI: How Machine Learning is Shaping Our World'),
+(2, 2, 'Top 10 Web Development Trends to Watch in 2024'),
+(3, 3, 'Mastering Time Management: Techniques for Productivity'),
+(4, 4, 'The Rise of Remote Work: Challenges and Opportunities'),
+(5, 5, 'Climate Change and Its Impact on Global Economies'),
+(6, 6, 'The Psychology of Habits: How to Build Lasting Change'),
+(7, 7, 'Blockchain Beyond Cryptocurrency: New Applications in 2024'),
+(8, 8, 'Breaking Down Cybersecurity: Best Practices for Businesses'),
+(9, 9, 'Exploring the Benefits of Mindfulness in Everyday Life'),
+(10, 10, 'Decoding the Gig Economy: What It Means for the Future of Work'),
+(11, 1, 'The Evolution of Digital Marketing: Strategies for Success'),
+(12, 2, 'How 5G Technology Will Revolutionize the Internet'),
+(13, 3, 'Sustainable Living: Small Changes for a Greener Future'),
+(14, 4, 'The Intersection of Technology and Healthcare: Innovations to Watch'),
+(15, 5, 'How Artificial Intelligence is Revolutionizing Customer Service');
 
 insert into conference (name, date) values
 ('International AI Conference', '2024-07-01 09:00:00'),
