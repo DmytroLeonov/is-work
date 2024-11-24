@@ -5,6 +5,8 @@
         "/" => "index.controller.php",
         "/conferences" => "conferences.controller.php",
         "/conference" => "conference.controller.php",
+        "/employee" => "employee.controller.php",
+        "/employee/update" => "update_employee.controller.php",
     ];
 
     function routeToController($path, $routes) {

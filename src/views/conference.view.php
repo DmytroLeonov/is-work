@@ -19,11 +19,7 @@
                 </td>
                 <td><?= $report["position_name"] ?></td>
                 <td class="max-w-72"><?= $report["article_name"] ?></td>
-                <td>
-                    <a class="underline text-blue-500" href="journal?id=<?= $report["journal_id"] ?>">
-                        <?= $report["journal_name"] ?>
-                    </a>
-                </td>
+                <td><?= $report["journal_name"] ?></td>
             </tr>
         <?php endforeach ?>
         </tr>
