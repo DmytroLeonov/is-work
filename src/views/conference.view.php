@@ -10,16 +10,16 @@
         </tr>
         <?php foreach ($reports as $report) : ?>
             <tr>
-                <td><?= $report["id"] ?></td>
-                <td><?= $report["report_time"] ?></td>
+                <td><?= htmlspecialchars($report["id"]) ?></td>
+                <td><?= htmlspecialchars($report["report_time"]) ?></td>
                 <td>
-                    <a class="underline text-blue-500" href="employee?id=<?= $report["employee_id"] ?>">
-                        <?= $report["employee_name"] ?>
+                    <a class="underline text-blue-500" href="employee?id=<?= htmlspecialchars($report["employee_id"]) ?>">
+                        <?= htmlspecialchars($report["employee_name"]) ?>
                     </a>
                 </td>
-                <td><?= $report["position_name"] ?></td>
-                <td class="max-w-72"><?= $report["article_name"] ?></td>
-                <td><?= $report["journal_name"] ?></td>
+                <td><?= htmlspecialchars($report["position_name"]) ?></td>
+                <td class="max-w-72"><?= htmlspecialchars($report["article_name"]) ?></td>
+                <td><?= htmlspecialchars($report["journal_name"]) ?></td>
             </tr>
         <?php endforeach ?>
         </tr>

@@ -10,7 +10,7 @@
     </div>
 <?php endif ?>
 
-<form action="" method="POST" class="space-y-4">
+<form method="POST" class="space-y-4">
     <div>
         <label for="name" class="block">Name:</label>
         <input

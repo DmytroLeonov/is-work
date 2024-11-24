@@ -9,17 +9,17 @@
         </tr>
         <?php foreach ($conferences as $conference) : ?>
             <tr>
-                <td><?= $conference["id"] ?></td>
+                <td><?= htmlspecialchars($conference["id"]) ?></td>
                 <td>
                     <a
                         class="underline text-blue-500"
-                        href="conference?id=<?= $conference["id"] ?>">
-                        <?= $conference["name"] ?>
+                        href="conference?id=<?= htmlspecialchars($conference["id"]) ?>">
+                        <?= htmlspecialchars($conference["name"]) ?>
                     </a>
                 </td>
-                <td><?= $conference["participants"] ?></td>
-                <td><?= $conference["date"] ?></td>
-                <td><?= $conference["status"] ?></td>
+                <td><?= htmlspecialchars($conference["participants"]) ?></td>
+                <td><?= htmlspecialchars($conference["date"]) ?></td>
+                <td><?= htmlspecialchars($conference["status"]) ?></td>
             </tr>
         <?php endforeach ?>
         </tr>
