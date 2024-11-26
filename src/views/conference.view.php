@@ -1,4 +1,10 @@
 <table class="w-full">
+    <div class="flex justify-between mb-3">
+        <h1 class="text-xl">Conference <?= htmlspecialchars($id) ?></h1>
+        <a class="underline text-blue-500 mr-0 ml-auto" href="/conference-report/create?id=<?= htmlspecialchars($id) ?>">
+            Create Report
+        </a>
+    </div>
     <tbody>
         <tr>
             <th class="text-left">id</th>

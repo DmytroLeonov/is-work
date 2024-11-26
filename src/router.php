@@ -7,6 +7,7 @@
         "/conference" => "conference.controller.php",
         "/employee" => "employee.controller.php",
         "/employee/update" => "update_employee.controller.php",
+        "/conference-report/create" => "create_conference_report.controller.php",
     ];
 
     function routeToController($path, $routes) {
