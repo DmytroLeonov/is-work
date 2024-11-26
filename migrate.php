@@ -1,5 +1,5 @@
 <?php
-$env = parse_ini_file(".env");
+$env = parse_ini_file("src" . DIRECTORY_SEPARATOR . ".env");
 
 $server_name = $env["DB_SERVERNAME"];
 $db_user = $env["DB_USER"];
